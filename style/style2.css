@@ -1,0 +1,202 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:#777;
+    padding:30px;
+}
+.header
+{
+    height:95vh;
+    background-image: linear-gradient(to right bottom,
+    rgb(126, 213, 111,0.8),
+    rgb(40, 180, 133,0.8)),
+    url(../img/header.jpeg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+}
+.heading-primary
+{
+    color:#fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+.heading-primary-main
+{
+    margin-top:38px;
+    display: block;
+    font-size:30px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    animation-name: MoveLeft;
+    animation-duration: 1s;
+}
+.heading-primary-sub
+{
+    display: block;
+    font-size:20px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    animation-name:MoveRight;
+    animation-duration: 1s;
+    margin-bottom: 60px;
+}
+.text-box
+{
+    position: absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+@keyframes MoveLeft
+{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%
+    {
+        transform: translateX(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes MoveRight
+{
+    0%
+    {
+        opacity:0;
+        transform: translateX(100px);
+    }
+    80%
+    {
+        transform: translateX(-10px);
+    }
+    100%
+    {
+        transform: translate(0);
+    }
+}
+@keyframes MoveBtn
+{
+    0%
+    {
+        opacity: 0;
+        transform:translateY(30px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transform: all .2s;
+}
+.btn:hover
+{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0,0,0,0.2);
+}
+.btn:active
+{
+    transform: translateY(-1px);
+    box-shadow: 0 4px 1px rgb(0,0,0,0.2);
+}
+.btn-white
+{
+    background-color: #fff;
+    color:grey;
+}
+.btn-animated
+{
+    animation: MoveBtn .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+.other-box{
+    margin-top:10px;
+    height:95vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(15, 20, 85, 0.8),
+    rgba(66, 40, 180, 0.8)),
+    url(../img/header.jpeg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0,100% 0,110% 100%,75 100%);
+    color:white;
+    animation-name:MoveLeft;
+    animation-duration: 1s;
+}
+h1{
+    font-size:25px;
+}
+.skill{
+    font-size:20px;
+    margin-left:25px;
+    margin-top:20px;
+    padding-top:10px;
+}
+.list{
+    margin-left:30px;
+}
+
+.photo-box{
+    margin-top:10px;
+    height:95vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(15, 20, 85, 0.00),
+    rgba(66, 40, 180, 0.00)),
+    url(../img/header.jpeg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0,100% 0,110% 100%,75 100%);
+    color:black;
+    animation-name:MoveLeft;
+    animation-duration: 1s;
+}
+.Heading{
+    font-size:35px;
+    letter-spacing: 20px;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+    margin-bottom: 10px;
+    height:300px;
+  }
+
+.caption {
+    width: 200px;
+    font-size:20px;
+    color:black;
+    text-align:right;
+    vertical-align: text-top;
+    font-family:'Dokdo', cursive;
+}

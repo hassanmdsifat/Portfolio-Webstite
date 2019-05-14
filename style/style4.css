@@ -1,0 +1,9 @@
+.chatbox{
+    margin-left:200px;
+    margin-bottom:50px;
+    padding:50px;
+    width:800px;
+    color:white;
+    background: rgba(110, 167, 110, 0.705);
+    font-size: 15px;
+}
